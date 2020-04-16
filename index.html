@@ -1,0 +1,97 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>javascript on steroid</title>
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container-1">
+      <h1>Challenge 1 : Your age in days</h1>
+      <div class="container-flex-box-1">
+        <div>
+          <button class="btn btn-primary" onclick="ageInDays()">
+            Click me
+          </button>
+        </div>
+        <div>
+          <button class="btn btn-danger" onclick="reset()">reset</button>
+        </div>
+      </div>
+      <div class="container-flex-box-1">
+        <div class="result-flex-box" id="resultFlexBox"></div>
+      </div>
+    </div>
+    <div class="container-2">
+      <h1>Challenge 2 : Cat generator</h1>
+      <button
+        class="btn btn-success"
+        id="cat-generator"
+        onclick="catGererator()"
+      >
+        Generate Cat
+      </button>
+
+      <div class="flex-box-container-2" id="flex-cat-gen"></div>
+    </div>
+    <div class="container-3">
+      <h3>Challenge 3: Rock Paper Sessior</h3>
+      <div class="flex-box-rps" id="flex-box-rps-div">
+        <img
+          id="rock"
+          src="static/img/rock.png"
+          height="150"
+          width="150"
+          alt="rock"
+          onclick="rpgGame(this)"
+        />
+        <img
+          src="static/img/paper_texture305.jpg"
+          height="150"
+          width="150"
+          alt="paper"
+          onclick="rpgGame(this)"
+          id="paper"
+        />
+        <img
+          src="static/img/scissors.png"
+          height="150"
+          width="150"
+          alt="scissor"
+          onclick="rpgGame(this)"
+          id="scissors"
+        />
+      </div>
+    </div>
+
+    <div class="container-4">
+      <h1 id="change-my-color">Challenge 4 : Change the color of all button</h1>
+      <div class="flex-box-color-pick">
+        <form action="">
+          <select
+            name="backdrop"
+            id="Background"
+            onchange="buttonColorChange(this)"
+          >
+            <option value="random">Random</option>
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="reset">Reset</option>
+          </select>
+        </form>
+        <button class="btn btn-primary">Wee!</button>
+        <button class="btn btn-danger">Yahoo!</button>
+        <button class="btn btn-warning">Google!</button>
+        <button class="btn btn-success">Facebook!</button>
+      </div>
+    </div>
+    <script src="static/js/script.js"></script>
+  </body>
+</html>
