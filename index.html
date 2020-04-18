@@ -32,7 +32,7 @@
     <div class="container-2">
       <h1>Challenge 2 : Cat generator</h1>
       <button
-        class="btn btn-success"
+        class="btn btn-lg btn-success mb-2"
         id="cat-generator"
         onclick="catGererator()"
       >
@@ -90,6 +90,48 @@
         <button class="btn btn-danger">Yahoo!</button>
         <button class="btn btn-warning">Google!</button>
         <button class="btn btn-success">Facebook!</button>
+      </div>
+    </div>
+    <div class="container-5">
+      <h1>Challenge 5: Black Jack</h1>
+      <h3><span id="blackjack-result">Let's Play</span></h3>
+      <div class="flex-blackjack-row-1">
+        <div id="your-box">
+          <h2>You :<span id="your-blackjack-result">0</span></h2>
+        </div>
+        <div id="dealer-box">
+          <h2>Dealer :<span id="dealer-blackjack-result">0</span></h2>
+        </div>
+      </div>
+      <div class="flex-blackjack-row-2">
+        <div>
+          <button class="btn btn-primary btn-lg mr-2" id="blackjack-hit-button">
+            Hit
+          </button>
+          <button
+            class="btn btn-warning btn-lg mr-2"
+            id="blackjack-stand-button"
+          >
+            Stand
+          </button>
+          <button class="btn btn-danger btn-lg" id="blackjack-deal-button">
+            Deal
+          </button>
+        </div>
+      </div>
+      <div class="flex-blackjack-row-3">
+        <table>
+          <tr>
+            <th>Wins</th>
+            <th>Loses</th>
+            <th>Draws</th>
+          </tr>
+          <tr>
+            <td><span id="wins">0</span></td>
+            <td><span id="losses">0</span></td>
+            <td><span id="drews">0</span></td>
+          </tr>
+        </table>
       </div>
     </div>
     <script src="static/js/script.js"></script>
